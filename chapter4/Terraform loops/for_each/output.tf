@@ -5,7 +5,7 @@ output "all_rg" {
 
 # All the resource group resource ID
 output "all_id" {
-value = values(azurerm_resource_group.example)[*].id
+  value = values(azurerm_resource_group.example)[*].id
 }
 
 
