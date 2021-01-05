@@ -8,32 +8,35 @@ module "terraform-gcp-gcs" {
   labels        = var.labels
 }
 resource "google_compute_network" "gcp-network" {
-  name        = "${var.vpc_name}-vpc"
-  description = "This is gcp terraform vpc"
-  project     = var.project
-  depends_on  = [module.terraform-gcp-gcs.gcs_name]
+  name                    = "${local.gcp_string}-vpc"
+  description             = "This is gcp terraform vpc"
+  routing_mode            = var.routing_mode
+  auto_create_subnetworks = false
+  depends_on              = [module.terraform-gcp-gcs.gcs_name]
+  project                 = var.project
 }
 resource "random_string" "string_name" {
   length  = 6
   special = false
   upper   = false
+  number  = false
 }
 locals {
   gcp_string = random_string.string_name.result
 }
 resource "google_compute_subnetwork" "gcp-subnetwork" {
-  name          = "${local.gcp_string}gcpsubnet"
+  name          = "${local.gcp_string}subnet"
   description   = "This is subnet address"
   ip_cidr_range = var.ip_cidr_range
   region        = var.gcp_region
+  project       = var.project
   network       = google_compute_network.gcp-network.id
 }
-
 resource "google_compute_address" "internal_with_subnet_and_address" {
-  name         = "${local.gcp_string}gcpinternal"
+  name         = "${local.gcp_string}internal"
   subnetwork   = google_compute_subnetwork.gcp-subnetwork.id
   address_type = var.address_type
   address      = var.address
   region       = var.gcp_region
-  labels       = var.labels
+  project      = var.project
 }

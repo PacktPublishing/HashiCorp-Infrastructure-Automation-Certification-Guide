@@ -35,3 +35,15 @@ variable "ip_cidr_range" {
   type        = string
   description = "provide IP CIDR Range"
 }
+variable "address" {
+  type        = string
+  description = "provide static address with in the CIDR range"
+}
+variable "address_type" {
+  type        = string
+  description = "provide address type whether it is INTERNAL or EXTERNAL"
+}
+variable "routing_mode" {
+  type        = string
+  description = "provide routing method GLOBAL or REGIONAL"
+}
