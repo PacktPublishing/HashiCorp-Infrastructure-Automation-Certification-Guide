@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "rgname" {
   location = var.location
   tags = {
     "environment" = "development"
-    "costcenter"="B3478"
+    "costcenter"  = "B3478"
   }
 }
 variable "location" {
