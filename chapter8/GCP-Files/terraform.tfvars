@@ -1,7 +1,7 @@
 gcp_location  = "US"
 force_destroy = true
 storage_class = "STANDARD"
-project       = "terraform-project-2342"
+project_id    = "terraform-project-2342"
 labels        = { environment = "development", owner = "gcp-terraform" }
 routing_mode  = "GLOBAL"
 ip_cidr_range = "10.0.0.0/16"

@@ -11,7 +11,7 @@ variable "storage_class" {
   type        = string
   description = "Supported values include: MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE"
 }
-variable "project" {
+variable "project_id" {
   type        = string
   description = "provide project ID"
 }
