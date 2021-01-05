@@ -1,6 +1,6 @@
-variable "location_id"{
+variable "location_id" {
   description = "provide location name"
 }
-variable "project_id"{
+variable "project_id" {
   description = "provide Google Project ID"
 }

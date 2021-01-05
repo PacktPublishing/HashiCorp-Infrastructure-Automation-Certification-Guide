@@ -8,7 +8,7 @@ resource "azurerm_resource_group" "rgname" {
   }
 }
 variable "location" {
-  type = string
+  type    = string
   default = "east us"
 }
 output "id" {

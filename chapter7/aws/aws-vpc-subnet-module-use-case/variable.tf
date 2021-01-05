@@ -12,6 +12,6 @@ variable "subnet_name" {
   description = "subnet name"
 }
 variable "region" {
-  type = string
+  type        = string
   description = "provide region where you want to deploy resources"
 }

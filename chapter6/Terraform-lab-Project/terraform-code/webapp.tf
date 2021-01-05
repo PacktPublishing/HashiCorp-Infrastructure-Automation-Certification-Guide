@@ -1,5 +1,5 @@
 data "azurerm_resource_group" "dev" {
-  name     = "Terraform-lab-rg"
+  name = "Terraform-lab-rg"
 }
 resource "azurerm_app_service_plan" "dev" {
   name                = var.appserviceplan_name

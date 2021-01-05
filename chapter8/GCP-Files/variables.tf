@@ -16,14 +16,22 @@ variable "project" {
   description = "provide project ID"
 }
 variable "project_name" {
-    type = string
-    description = "provide google project name"
+  type        = string
+  description = "provide google project name"
 }
 variable "labels" {
   type        = map
   description = "provide name of the labels"
 }
-variable "routing_mode" {
-    type = string
-    description = "provide routing mode GLOBAL or REGIONAL" 
+variable "gcp_region" {
+  type        = string
+  description = "provide gcp region"
+}
+variable "zone" {
+  type        = string
+  description = "provide gcp zone"
+}
+variable "ip_cidr_range" {
+  type        = string
+  description = "provide IP CIDR Range"
 }
