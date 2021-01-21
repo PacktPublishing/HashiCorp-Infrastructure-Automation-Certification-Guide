@@ -17,7 +17,7 @@ module "subnet" {
   depends_on       = [module.vpc.id]
 }
 module "routes" {
-  source     = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/gcp/modules/routes?ref=v1.10"
+  source     = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/gcp/modules/route?ref=v1.10"
   project_id = var.project_id
   vpc_name   = var.vpc_name
   routes     = var.routes
