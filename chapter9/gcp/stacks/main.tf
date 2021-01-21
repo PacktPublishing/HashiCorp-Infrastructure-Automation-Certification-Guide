@@ -17,14 +17,14 @@ module "subnet" {
   depends_on       = [module.vpc.id]
 }
 module "routes" {
-  source     = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/gcp/module/routes?ref=v1.10"
+  source     = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/gcp/modules/routes?ref=v1.10"
   project_id = var.project_id
   vpc_name   = var.vpc_name
   routes     = var.routes
   depends_on = [module.vpc.id]
 }
 module "storage" {
-  source        = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/gcp/module/storage?ref=v1.11"
+  source        = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/gcp/modules/storage?ref=v1.11"
   stg_name      = var.stg_name
   location      = var.location
   force_destroy = var.force_destroy
