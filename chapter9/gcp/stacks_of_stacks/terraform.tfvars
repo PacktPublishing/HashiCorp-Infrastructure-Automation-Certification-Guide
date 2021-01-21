@@ -6,6 +6,7 @@ labels           = { environment = "development", owner = "gcp-terraform" }
 vpc_routing_mode = "GLOBAL"
 region           = "us-west2"
 zone             = "us-west2-c"
+vpc_name         = "terraform-vpc"
 project_name     = "terraform-project"
 subnets = [
   {
