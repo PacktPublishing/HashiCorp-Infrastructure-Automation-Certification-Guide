@@ -1,5 +1,5 @@
 module "vpc" {
-  source                          = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/gcp/modules/vpc?ref=v1.12"
+  source                          = "github.com/inm/Hararcorp-Infrastructure-Automation-.git//chapter9/gcp/modules/vpc?ref=v1.12"
   vpc_name                        = var.vpc_name
   vpc_mtu                         = var.vpc_mtu
   vpc_description                 = var.vpc_description
@@ -9,7 +9,7 @@ module "vpc" {
   auto_create_subnetworks         = var.auto_create_subnetworks
 }
 module "subnet" {
-  source           = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/gcp/modules/subnet?ref=v1.13"
+  source           = "github.com/inm/Hararcorp-Infrastructure-Automation-.git//chapter9/gcp/modules/subnet?ref=v1.13"
   project_id       = var.project_id
   vpc_name         = var.vpc_name
   subnets          = var.subnets
@@ -17,14 +17,14 @@ module "subnet" {
   depends_on       = [module.vpc.id]
 }
 module "routes" {
-  source     = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/gcp/modules/route?ref=v1.10"
+  source     = "github.com/inm/Hararcorp-Infrastructure-Automation-.git//chapter9/gcp/modules/route?ref=v1.10"
   project_id = var.project_id
   vpc_name   = var.vpc_name
   routes     = var.routes
   depends_on = [module.vpc.id]
 }
 module "storage" {
-  source        = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/gcp/modules/storage?ref=v1.11"
+  source        = "github.com/inm/Hararcorp-Infrastructure-Automation-.git//chapter9/gcp/modules/storage?ref=v1.11"
   stg_name      = var.stg_name
   location      = var.location
   force_destroy = var.force_destroy
