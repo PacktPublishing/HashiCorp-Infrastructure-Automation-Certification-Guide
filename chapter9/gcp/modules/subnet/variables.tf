@@ -2,12 +2,12 @@
 	Subnet Variables
  *****************************************/
 variable "project_id" {
-  type = string
+  type        = string
   description = "The ID of the project where subnets will be created"
 }
 
 variable "vpc_name" {
-  type = string
+  type        = string
   description = "The name of the network where subnets will be created"
 }
 

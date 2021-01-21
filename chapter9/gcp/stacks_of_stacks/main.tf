@@ -1,5 +1,7 @@
 module "gcp_stacks" {
   source                          = "../stacks"
+  zone                            = var.zone
+  region                          = var.region
   vpc_name                        = var.vpc_name
   vpc_mtu                         = var.vpc_mtu
   vpc_description                 = var.vpc_description
