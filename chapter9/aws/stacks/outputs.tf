@@ -4,9 +4,9 @@ output "subnet_id" {
 }
 output "s3_id" {
   description = "S3 bucket id"
-  value       = module.s3.s3_id
+  value       = module.s3[count.index].s3_id
 }
 output "vpc_id" {
   description = "VPC id"
-  value       = module.vpc.vpc_id
+  value       = module.vpc[count.index].vpc_id
 }
