@@ -24,7 +24,6 @@ module "s3" {
   source              = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/aws/modules/s3?ref=v1.14"
   create_bucket       = var.create_bucket
   bucket_name         = var.bucket_name
-  bucket_prefix       = var.bucket_prefix
   bucket_acl          = var.bucket_acl
   force_destroy       = var.force_destroy
   acceleration_status = var.acceleration_status

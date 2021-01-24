@@ -14,7 +14,6 @@ module "aws_stacks" {
   subnet_cidr                      = var.subnet_cidr
   create_bucket                    = var.create_bucket
   bucket_name                      = var.bucket_name
-  bucket_prefix                    = var.bucket_prefix
   bucket_acl                       = var.bucket_acl
   force_destroy                    = var.force_destroy
   acceleration_status              = var.acceleration_status

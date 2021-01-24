@@ -77,12 +77,6 @@ variable "create_bucket" {
   type        = bool
   default     = true
 }
-variable "bucket_prefix" {
-  description = "(Optional, Forces new resource) Creates a unique bucket name beginning with the specified prefix. Conflicts with bucket."
-  type        = string
-  default     = null
-}
-
 variable "bucket_name" {
   type        = string
   description = "provide name of the S3 bucket"
