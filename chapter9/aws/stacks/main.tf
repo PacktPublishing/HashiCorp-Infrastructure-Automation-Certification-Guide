@@ -21,7 +21,7 @@ module "subnet" {
 }
 
 module "s3" {
-  source              = "github.com/inmishrar/Hashicorp-Infrastructure-Automation-.git//chapter9/aws/modules/storage?ref=v1.14"
+  source              = "github.com/inmishrar/Hashicorp-Infrastructure-Automation-.git//chapter9/aws/modules/s3?ref=v1.14"
   create_bucket       = var.create_bucket
   bucket_name         = var.bucket_name
   bucket_prefix       = var.bucket_prefix
