@@ -61,11 +61,6 @@ variable "subnet_name" {
   description = "Name of the subnet"
 }
 
-variable "vpc_id" {
-  type        = string
-  description = "The id of the VPC where subnet needs to be created"
-}
-
 variable "subnet_cidr" {
   type        = string
   description = "provide subnet range"
