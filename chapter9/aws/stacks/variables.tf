@@ -53,6 +53,10 @@ variable "assign_generated_ipv6_cidr_block" {
   type        = bool
   default     = false
 }
+variable "instance_tenancy" {
+  description = "provide tenancy details"
+  type = string
+}
 /******************************************
 	Subnet Variables
  *****************************************/

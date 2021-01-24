@@ -6,6 +6,10 @@ variable "create_vpc" {
   type        = bool
   default     = true
 }
+variable "instance_tenancy" {
+  description = "provide tenancy details"
+  type = string
+}
 
 variable "vpc_name" {
   description = "Define name of the VPC"

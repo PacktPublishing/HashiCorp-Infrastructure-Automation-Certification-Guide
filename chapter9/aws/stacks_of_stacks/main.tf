@@ -19,5 +19,4 @@ module "aws_stacks" {
   force_destroy                    = var.force_destroy
   acceleration_status              = var.acceleration_status
   request_payer                    = var.request_payer
-  region                           = var.region
 }
