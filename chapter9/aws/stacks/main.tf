@@ -1,5 +1,5 @@
 module "vpc" {
-  source                           = "github.com/inmishrar/Hashicorp-Infrastructure-Automation-.git//chapter9/aws/modules/vpc?ref=v1.12"
+  source                           = "github.com/inmishrar/Hashicorp-Infrastructure-Automation-.git//chapter9/aws/modules/vpc?ref=v1.14"
   cidr_block                       = var.cidr_block
   instance_tenancy                 = var.instance_tenancy
   enable_dns_hostnames             = var.enable_dns_hostnames
@@ -12,7 +12,7 @@ module "vpc" {
   custom_tags                      = var.custom_tags
 }
 module "subnet" {
-  source      = "github.com/inmishrar/Hashicorp-Infrastructure-Automation-.git//chapter9/aws/modules/subnet?ref=v1.13"
+  source      = "github.com/inmishrar/Hashicorp-Infrastructure-Automation-.git//chapter9/aws/modules/subnet?ref=v1.14"
   vpc_id      = module.vpc.id
   custom_tags = var.custom_tags
   subnet_name = var.subnet_name
@@ -21,7 +21,7 @@ module "subnet" {
 }
 
 module "s3" {
-  source              = "github.com/inmishrar/Hashicorp-Infrastructure-Automation-.git//chapter9/aws/modules/storage?ref=v1.11"
+  source              = "github.com/inmishrar/Hashicorp-Infrastructure-Automation-.git//chapter9/aws/modules/storage?ref=v1.14"
   create_bucket       = var.create_bucket
   bucket_name         = var.bucket_name
   bucket_prefix       = var.bucket_prefix
