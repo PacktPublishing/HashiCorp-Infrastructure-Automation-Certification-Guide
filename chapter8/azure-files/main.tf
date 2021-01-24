@@ -1,5 +1,5 @@
 module "terraform-vm" {
-  source               = "github.com/inmishrar/Hashicorp-Infrastructure-Automation-.git//chapter7/azurerm/azurerm-virtual-machine?ref=v0.0.1"
+  source               = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter7/azurerm/azurerm-virtual-machine?ref=v0.0.1"
   rgname               = var.rgname
   location             = var.location
   custom_tags          = var.custom_tags
