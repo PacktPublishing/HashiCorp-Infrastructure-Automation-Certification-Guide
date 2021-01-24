@@ -18,12 +18,6 @@ variable "cidr_block" {
   type        = string
   default     = "0.0.0.0/0"
 }
-
-variable "custom_tags" {
-  description = "A map of tags to add to all resources"
-  type        = map(string)
-  default     = {}
-}
 variable "enable_dns_hostnames" {
   description = "Should be true to enable DNS hostnames in the VPC"
   type        = bool
@@ -59,11 +53,6 @@ variable "assign_generated_ipv6_cidr_block" {
 variable "subnet_name" {
   type        = string
   description = "Name of the subnet"
-}
-
-variable "vpc_id" {
-  type        = string
-  description = "The id of the VPC where subnet needs to be created"
 }
 
 variable "subnet_cidr" {
