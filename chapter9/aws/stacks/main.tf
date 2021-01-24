@@ -27,7 +27,6 @@ module "s3" {
   bucket_acl          = var.bucket_acl
   force_destroy       = var.force_destroy
   acceleration_status = var.acceleration_status
-  request_payer       = var.request_payer
   custom_tags         = var.custom_tags
   depends_on          = [module.vpc.id]
 }

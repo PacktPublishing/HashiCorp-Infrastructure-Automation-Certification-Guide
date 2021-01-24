@@ -7,6 +7,5 @@ resource "aws_s3_bucket" "s3_bucket" {
   acl                 = var.bucket_acl
   force_destroy       = var.force_destroy
   acceleration_status = var.acceleration_status
-  request_payer       = var.request_payer
   tags                = var.custom_tags
 }

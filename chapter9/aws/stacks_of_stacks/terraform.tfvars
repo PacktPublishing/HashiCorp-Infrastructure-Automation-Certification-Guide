@@ -12,7 +12,6 @@ custom_tags                    = { environment = "test", owner = "terraform", co
 subnet_name                    = "terraform-subnet"
 subnet_cidr                    = "10.10.0.0/24"
 create_bucket                  = true
-bucket_name                    = "s3-bucket"
+bucket_name                    = "tf-s3-bucket"
 force_destroy                  = true
 acceleration_status            = "Enabled"
-request_payer                  = "terraform"

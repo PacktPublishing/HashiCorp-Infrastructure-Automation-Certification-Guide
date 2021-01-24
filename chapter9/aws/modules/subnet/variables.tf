@@ -7,7 +7,6 @@ variable "subnet_name" {
 }
 
 variable "vpc_id" {
-  type        = string
   description = "The id of the VPC where subnet needs to be created"
 }
 

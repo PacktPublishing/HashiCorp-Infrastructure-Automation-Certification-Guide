@@ -32,9 +32,3 @@ variable "acceleration_status" {
   type        = string
   default     = null
 }
-
-variable "request_payer" {
-  description = "(Optional) Specifies who should bear the cost of Amazon S3 data transfer. Can be either BucketOwner or Requester. By default, the owner of the S3 bucket would incur the costs of any data transfer. See Requester Pays Buckets developer guide for more information."
-  type        = string
-  default     = null
-}
