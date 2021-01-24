@@ -13,7 +13,7 @@ module "vpc" {
 }
 module "subnet" {
   source      = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/aws/modules/subnet?ref=v1.14"
-  vpc_id      = module.vpc.id
+  vpc_id      = module.vpc.vpc_id
   custom_tags = var.custom_tags
   subnet_name = var.subnet_name
   cidr_block  = var.subnet_cidr
