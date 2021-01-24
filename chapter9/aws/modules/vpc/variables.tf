@@ -35,7 +35,10 @@ variable "enable_dns_support" {
   type        = bool
   default     = true
 }
-
+variable "instance_tenancy" {
+  description = "provide tenancy details"
+  type = string
+}
 variable "enable_classiclink" {
   description = "Should be true to enable ClassicLink for the VPC. Only valid in regions and accounts that support EC2 Classic."
   type        = bool

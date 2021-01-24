@@ -104,3 +104,7 @@ variable "request_payer" {
   type        = string
   default     = null
 }
+variable "region" {
+  description = "provide region name where resource needs to get created"
+  type = string 
+}
