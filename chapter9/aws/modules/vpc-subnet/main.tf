@@ -21,7 +21,7 @@ resource "aws_vpc" "vpc" {
 	Subnet Code
  *****************************************/
 resource "aws_subnet" "subnet" {
-  vpc_id     = aws_vpc.vpc.id
+  vpc_id     = aws_vpc.vpc[count.index].id
   cidr_block = var.subnet_cidr
   tags = merge(
     {
