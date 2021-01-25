@@ -1,5 +1,5 @@
 module "vpc" {
-  source                           = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/aws/modules/vpc?ref=v1.14"
+  source                           = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/aws/modules/vpc-subnet?ref=v1.14"
   cidr_block                       = var.cidr_block
   instance_tenancy                 = var.instance_tenancy
   enable_dns_hostnames             = var.enable_dns_hostnames
@@ -10,16 +10,8 @@ module "vpc" {
   create_vpc                       = var.create_vpc
   vpc_name                         = var.vpc_name
   custom_tags                      = var.custom_tags
+  subnet_cidr                      = var.subnet_cidr
 }
-module "subnet" {
-  source      = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/aws/modules/subnet?ref=v1.14"
-  vpc_id      = module.vpc.vpc_id
-  custom_tags = var.custom_tags
-  subnet_name = var.subnet_name
-  cidr_block  = var.subnet_cidr
-  depends_on  = [module.vpc.id]
-}
-
 module "s3" {
   source              = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/aws/modules/s3?ref=v1.14"
   create_bucket       = var.create_bucket

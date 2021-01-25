@@ -1,6 +1,6 @@
 output "subnet_id" {
   description = "subnets ID"
-  value       = module.subnet.subnet_id
+  value       = module.vpc.subnet_id
 }
 output "s3_id" {
   description = "S3 bucket id"

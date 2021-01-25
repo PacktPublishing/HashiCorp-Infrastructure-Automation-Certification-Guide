@@ -17,3 +17,16 @@ resource "aws_vpc" "vpc" {
     var.custom_tags,
   )
 }
+/******************************************
+	Subnet Code
+ *****************************************/
+resource "aws_subnet" "subnet" {
+  vpc_id     = aws_vpc.vpc.id
+  cidr_block = var.subnet_cidr
+  tags = merge(
+    {
+      "Name" = format("%s", var.subnet_name)
+    },
+    var.custom_tags,
+  )
+}

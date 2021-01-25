@@ -57,3 +57,15 @@ variable "instance_tenancy" {
   description = "provide tenancy details"
   type = string
 }
+/******************************************
+	Subnet Variables
+ *****************************************/
+variable "subnet_name" {
+  type        = string
+  description = "Name of the subnet"
+}
+
+variable "subnet_cidr" {
+  type        = string
+  description = "provide subnet range"
+}
