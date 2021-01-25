@@ -6,7 +6,6 @@ cidr_block                     = "10.10.0.0/16"
 instance_tenancy               = "default"
 enable_classiclink             = false
 enable_classiclink_dns_support = false
-create_vpc                     = true
 vpc_name                       = "terraform-vpc"
 custom_tags                    = { environment = "test", owner = "terraform", costcenter = "tf0568" }
 subnet_name                    = "terraform-subnet"

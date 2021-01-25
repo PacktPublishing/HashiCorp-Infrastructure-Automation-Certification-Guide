@@ -2,7 +2,6 @@
 	VPC Code
  *****************************************/
 resource "aws_vpc" "vpc" {
-  count                            = var.create_vpc ? 1 : 0
   cidr_block                       = var.cidr_block
   instance_tenancy                 = var.instance_tenancy
   enable_dns_hostnames             = var.enable_dns_hostnames
@@ -21,7 +20,7 @@ resource "aws_vpc" "vpc" {
 	Subnet Code
  *****************************************/
 resource "aws_subnet" "subnet" {
-  vpc_id     = aws_vpc.vpc[count.index].id
+  vpc_id     = aws_vpc.vpc.id
   cidr_block = var.subnet_cidr
   tags = merge(
     {

@@ -7,7 +7,6 @@ module "aws_stacks" {
   enable_classiclink               = var.enable_classiclink
   enable_classiclink_dns_support   = var.enable_classiclink_dns_support
   assign_generated_ipv6_cidr_block = var.assign_generated_ipv6_cidr_block
-  create_vpc                       = var.create_vpc
   vpc_name                         = var.vpc_name
   custom_tags                      = var.custom_tags
   subnet_name                      = var.subnet_name

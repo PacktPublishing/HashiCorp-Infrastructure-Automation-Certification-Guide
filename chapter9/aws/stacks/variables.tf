@@ -1,12 +1,6 @@
 /******************************************
 	VPC Variables
  *****************************************/
-variable "create_vpc" {
-  description = "Controls if VPC should be created (it affects almost all resources)"
-  type        = bool
-  default     = true
-}
-
 variable "vpc_name" {
   description = "Define name of the VPC"
   type        = string
