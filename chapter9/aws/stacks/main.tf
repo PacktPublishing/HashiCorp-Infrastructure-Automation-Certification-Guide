@@ -11,6 +11,7 @@ module "vpc" {
   vpc_name                         = var.vpc_name
   custom_tags                      = var.custom_tags
   subnet_cidr                      = var.subnet_cidr
+  subnet_name                      = var.subnet_name
 }
 module "s3" {
   source              = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/aws/modules/s3?ref=v1.14"
