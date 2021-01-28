@@ -41,4 +41,4 @@ connection_string = [{
 ip_address = [{
   ip_address = "0.0.0.0/0"
 }]
-default_documents = ["index.html", "default.html"]
+default_documents = ["index.html","default.html"]

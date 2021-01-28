@@ -12,6 +12,7 @@ module "webapp" {
   app_settings          = var.app_settings
   connection_string     = var.connection_string
   asp_config            = var.asp_config
+  default_documents     = var.default_documents
   tags                  = var.tags
 }
 
