@@ -49,7 +49,7 @@ variable "assign_generated_ipv6_cidr_block" {
 }
 variable "instance_tenancy" {
   description = "provide tenancy details"
-  type = string
+  type        = string
 }
 /******************************************
 	Subnet Variables

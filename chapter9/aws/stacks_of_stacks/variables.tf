@@ -3,7 +3,7 @@
  *****************************************/
 variable "instance_tenancy" {
   description = "provide tenancy details"
-  type = string
+  type        = string
 }
 
 variable "vpc_name" {
@@ -99,5 +99,5 @@ variable "request_payer" {
 }
 variable "region" {
   description = "provide region name where resource needs to get created"
-  type = string 
+  type        = string
 }

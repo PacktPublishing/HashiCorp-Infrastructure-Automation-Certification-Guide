@@ -3,7 +3,7 @@
  *****************************************/
 
 module "webapp" {
-  source = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/azure/modules/webapp?ref=v1.15"
+  source                = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/azure/modules/webapp?ref=v1.15"
   create_resource_group = var.create_resource_group
   resource_group_name   = var.resource_group_name
   location              = var.location
@@ -20,7 +20,7 @@ module "webapp" {
 	Storage Module Code
  *****************************************/
 module "storage" {
-  source = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/azure/modules/storage?ref=v1.15"
+  source                   = "github.com/PacktPublishing/Hashicorp-Infrastructure-Automation-.git//chapter9/azure/modules/storage?ref=v1.15"
   create_resource_group    = var.create_resource_group
   resource_group_name      = var.resource_group_name
   location                 = var.location
