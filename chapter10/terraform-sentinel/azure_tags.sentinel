@@ -1,0 +1,16 @@
+import "tfplan/v2" as tfplan
+
+rg_tags = filter tfplan.resource_changes as _, rc {
+	rc.type is "azurerm_resource_group" and
+		(rc.change.actions contains "create" or rc.change.actions is ["update"])
+}
+
+azure_tags = rule {
+	all rg_tags as _, instances {
+		instances.change.after.tags is not null
+	}
+}
+
+main = rule {
+	azure_tags
+}
