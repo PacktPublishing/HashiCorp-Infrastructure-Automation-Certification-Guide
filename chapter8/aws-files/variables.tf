@@ -24,7 +24,7 @@ variable "bucket_acl" {
   description = "provide ACL for the S3 bucket i.e. private, public-read etc."
 }
 variable "custom_tags" {
-  type        = map
+  type        = map(any)
   description = "provide tags which needs to be applied."
 
 }

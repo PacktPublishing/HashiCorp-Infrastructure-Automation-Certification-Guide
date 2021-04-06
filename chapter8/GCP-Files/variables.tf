@@ -20,7 +20,7 @@ variable "project_name" {
   description = "provide google project name"
 }
 variable "labels" {
-  type        = map
+  type        = map(any)
   description = "provide name of the labels"
 }
 variable "gcp_region" {

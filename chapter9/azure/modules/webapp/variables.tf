@@ -18,7 +18,7 @@ variable "location" {
   default     = "eastus"
 }
 variable "asp_config" {
-  type        = map
+  type        = map(any)
   description = "provide all the asp configuration details like kind, tier, size"
   default     = {}
 }
@@ -44,12 +44,12 @@ app_config = {
   java_container_version = null
 }
 EOF
-  type        = map
+  type        = map(any)
 }
 
 variable "ip_address" {
   description = "The ip_address variable contains the list of ip's"
-  type        = list
+  type        = list(any)
 }
 
 variable "app_settings" {
@@ -62,13 +62,13 @@ Sample settings
   }
 
 EOF
-  type        = map
+  type        = map(any)
   default     = {}
 }
 
 variable "connection_string" {
   description = "A List of SQL Database Connections"
-  type        = list
+  type        = list(any)
   default     = []
 }
 

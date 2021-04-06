@@ -64,7 +64,7 @@ variable "allow_blob_public_access" {
 #Webapp variables
 
 variable "asp_config" {
-  type        = map
+  type        = map(any)
   description = "provide all the asp configuration details like kind, tier, size"
 }
 variable "default_documents" {
@@ -87,12 +87,12 @@ app_config = {
   java_container_version = null
 }
 EOF
-  type        = map
+  type        = map(any)
 }
 
 variable "ip_address" {
   description = "The ip_address variable contains the list of ip's"
-  type        = list
+  type        = list(any)
 }
 
 variable "app_settings" {
@@ -105,12 +105,12 @@ Sample settings
   }
 
 EOF
-  type        = map
+  type        = map(any)
   default     = {}
 }
 variable "connection_string" {
   description = "A List of SQL Database Connections"
-  type        = list
+  type        = list(any)
   default     = []
 }
 variable "use_32_bit_worker_process" {

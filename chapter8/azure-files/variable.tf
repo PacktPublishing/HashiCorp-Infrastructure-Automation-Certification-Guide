@@ -67,7 +67,7 @@ variable "keyvault_secret_name" {
   default     = "vmpassword"
 }
 variable "custom_tags" {
-  type        = map
+  type        = map(any)
   description = "provide tags"
 }
 variable "account_tier" {
