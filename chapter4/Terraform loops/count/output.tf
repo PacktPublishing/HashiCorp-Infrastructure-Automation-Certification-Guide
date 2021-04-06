@@ -11,4 +11,3 @@ output "All_rg_id" {
   value       = azurerm_resource_group.example[*].id
   description = "The Id of all the resource group"
 }
-

@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 0.12"
+  required_version = ">= 0.13"
   backend "azurerm" {
     storage_account_name = "terraformstg2345"
     container_name       = "terraform"
@@ -8,6 +8,6 @@ terraform {
   }
 }
 provider "azurerm" {
-  version = "=2.20.0"
+  version = "=2.46.0"
   features {}
 }
