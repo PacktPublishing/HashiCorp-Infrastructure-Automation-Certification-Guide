@@ -1,7 +1,10 @@
-create_resource_group    = true
-resource_group_name      = "Terraform-test-rg"
-location                 = "East US"
-tags                     = { Environment = "prod", Owner = "Azure-Terraform" }
+create_resource_group = true
+resource_group_name   = "Terraform-test-rg"
+location              = "East US"
+tags = {
+  Environment = "prod"
+  Owner       = "Azure-Terraform"
+}
 storage_account_name     = "tf"
 skuname                  = "Standard_LRS"
 allow_blob_public_access = true

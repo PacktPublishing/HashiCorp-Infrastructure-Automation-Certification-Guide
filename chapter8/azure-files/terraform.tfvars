@@ -1,6 +1,9 @@
-rgname                   = "Terraform-rg"
-location                 = "east us"
-custom_tags              = { Environment = "prod", Owner = "Azure-Terraform" }
+rgname   = "Terraform-rg"
+location = "east us"
+custom_tags = {
+  Environment = "prod"
+  Owner       = "Azure-Terraform"
+}
 vm_size                  = "Standard_F2"
 vm_name                  = "Terraform-vm"
 admin_username           = "azureterraform"
