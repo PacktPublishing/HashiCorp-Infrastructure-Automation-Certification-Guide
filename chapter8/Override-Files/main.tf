@@ -9,7 +9,7 @@ resource "azurerm_resource_group" "rgname" {
 }
 variable "location" {
   type    = string
-  default = "east us"
+  default = "eastus"
 }
 output "id" {
   value = "azurerm_resource_group.rgname.id"

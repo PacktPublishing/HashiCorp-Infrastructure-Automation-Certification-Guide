@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "example" {
   name     = "Terraform-rg"
-  location = "West Europe"
+  location = "westeurope"
 }
 resource "azurerm_virtual_network" "vnet" {
   name                = var.vnet_name

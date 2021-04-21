@@ -1,6 +1,6 @@
 create_resource_group = true
 resource_group_name   = "Terraform-test-rg"
-location              = "East US"
+location              = "eastus"
 tags = {
   Environment = "prod"
   Owner       = "Azure-Terraform"

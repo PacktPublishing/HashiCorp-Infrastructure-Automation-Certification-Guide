@@ -1,5 +1,5 @@
 rgname   = "Terraform-rg"
-location = "East US"
+location = "eastus"
 custom_tags = {
   Environment = "prod"
   Owner       = "Azure-Terraform"
