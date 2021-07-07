@@ -1,5 +1,5 @@
 module "terraform-vm" {
-  source               = "../../terraform-azure-module"
+  source               = "../azurerm-virtual-machine-module"
   rgname               = var.rgname
   location             = var.location
   custom_tags          = var.custom_tags
