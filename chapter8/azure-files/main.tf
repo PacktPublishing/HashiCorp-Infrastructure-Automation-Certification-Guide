@@ -34,4 +34,5 @@ resource "azurerm_storage_account" "stg_account" {
   tags                     = var.custom_tags
   account_tier             = var.account_tier
   account_replication_type = var.account_replication_type
+  depends_on               = [module.terraform-vm]
 }
