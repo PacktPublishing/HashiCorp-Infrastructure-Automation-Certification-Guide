@@ -12,8 +12,8 @@ variable "location" {
   default = "eastus"
 }
 output "id" {
-  value = "azurerm_resource_group.rgname.id"
+  value = azurerm_resource_group.rgname.id
 }
 output "name" {
-  value = "azurerm_resource_group.rgname.name"
+  value = azurerm_resource_group.rgname.name
 }
