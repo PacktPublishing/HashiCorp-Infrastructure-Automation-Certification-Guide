@@ -1,6 +1,6 @@
 # HashiCorp Infrastructure Automation Certification Guide
 
-<a href="https://www.packtpub.com/in/cloud-networking/hashicorp-infrastructure-automation-terraform-associate-exam-guide?utm_source=github&utm_medium=repository&utm_campaign=9781786461629"><img src="https://www.packtpub.com/media/catalog/product/cache/9314477e0961dec07dad030bff4f63d5/9/7/9781800565975-original_296.jpeg" alt="HashiCorp Infrastructure Automation Certification Guide" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/in/cloud-networking/hashicorp-infrastructure-automation-terraform-associate-exam-guide?utm_source=github&utm_medium=repository&utm_campaign=9781786461629"><img src="https://www.packtpub.com/media/catalog/product/cache/4cdce5a811acc0d2926d7f857dceb83b/9/7/9781800565975-original_296.jpeg" alt="HashiCorp Infrastructure Automation Certification Guide" height="256px" align="right"></a>
 
 This is the code repository for [HashiCorp Infrastructure Automation Certification Guide](https://www.packtpub.com/in/cloud-networking/hashicorp-infrastructure-automation-terraform-associate-exam-guide?utm_source=github&utm_medium=repository&utm_campaign=9781786461629), published by Packt.
 
