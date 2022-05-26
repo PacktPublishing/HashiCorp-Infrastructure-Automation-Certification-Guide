@@ -1,3 +1,7 @@
+## [Get this title for $10 on Packt's Spring Sale](https://www.packt.com/B16919?utm_source=github&utm_medium=packt-github-repo&utm_campaign=spring_10_dollar_2022)
+-----
+For a limited period, all eBooks and Videos are only $10. All the practical content you need \- by developers, for developers
+
 # HashiCorp Infrastructure Automation Certification Guide
 
 <a href="https://www.packtpub.com/in/cloud-networking/hashicorp-infrastructure-automation-terraform-associate-exam-guide?utm_source=github&utm_medium=repository&utm_campaign=9781786461629"><img src="https://www.packtpub.com/media/catalog/product/cache/4cdce5a811acc0d2926d7f857dceb83b/9/7/9781800565975-original_296.jpeg" alt="HashiCorp Infrastructure Automation Certification Guide" height="256px" align="right"></a>
