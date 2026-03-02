@@ -1,10 +1,5 @@
 <p align='center'><a href='https://www.eventbrite.com/e/ship-production-pytorch-system-in-a-day-train-optimize-deploy-workshop-tickets-1983348934052?aff=GitHub'><img src='https://static.packt-cdn.com/assets/images/packt+events/workshop_ashish_github.png'/></a></p>
 
-<p align='center'><a href='https://www.eventbrite.com/e/ship-production-pytorch-system-in-a-day-train-optimize-deploy-workshop-tickets-1983348934052?aff=GitHub'><img src='https://static.packt-cdn.com/assets/images/packt+events/workshop_ashish_github.png'/></a></p>
-
-
-
-
 # HashiCorp Infrastructure Automation Certification Guide
 
 <a href="https://www.packtpub.com/in/cloud-networking/hashicorp-infrastructure-automation-terraform-associate-exam-guide?utm_source=github&utm_medium=repository&utm_campaign=9781786461629"><img src="https://www.packtpub.com/media/catalog/product/cache/4cdce5a811acc0d2926d7f857dceb83b/9/7/9781800565975-original_296.jpeg" alt="HashiCorp Infrastructure Automation Certification Guide" height="256px" align="right"></a>
